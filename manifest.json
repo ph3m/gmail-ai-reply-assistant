@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "AI Email Reply Assistant (Gemini)",
+  "version": "1.1.0",
+  "description": "Adds a Gemini 2.5 Flash-powered \"AI Reply\" button to Gmail compose windows.",
+
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+
+  "host_permissions": [
+    "https://mail.google.com/*",
+    "https://generativelanguage.googleapis.com/*"
+  ],
+
+  "options_page": "options.html",
+
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+
+  "icons": {
+    "16":  "icons/icon16.png",
+    "48":  "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

@@ -1,0 +1,21 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Packed extension artifacts
+*.zip
+*.crx
+*.pem
+
+# Node (if you ever add a build step / linter)
+node_modules/
+npm-debug.log
+
+# Local env / secrets — never commit API keys
+.env
+.env.local
+secrets.json

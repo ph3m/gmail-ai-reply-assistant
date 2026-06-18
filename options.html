@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Email Reply Assistant — Settings</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      max-width: 480px;
+      margin: 40px auto;
+      padding: 0 24px;
+      color: #202124;
+    }
+    h1 {
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    p.subtitle {
+      color: #5f6368;
+      font-size: 13px;
+      margin-top: -8px;
+    }
+    label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      margin-top: 20px;
+      margin-bottom: 6px;
+    }
+    input[type="password"],
+    input[type="text"] {
+      width: 100%;
+      padding: 10px 12px;
+      font-size: 14px;
+      border: 1px solid #dadce0;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+    button {
+      margin-top: 16px;
+      padding: 9px 18px;
+      background: #1a73e8;
+      color: #fff;
+      border: none;
+      border-radius: 18px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    button:hover { background: #1765cc; }
+    .status {
+      margin-top: 12px;
+      font-size: 13px;
+      min-height: 18px;
+    }
+    .status.success { color: #188038; }
+    .status.error   { color: #d93025; }
+    a { color: #1a73e8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .help {
+      margin-top: 28px;
+      padding-top: 16px;
+      border-top: 1px solid #ebebeb;
+      font-size: 12px;
+      color: #5f6368;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <h1>✨ AI Email Reply Assistant</h1>
+  <p class="subtitle">Settings — Gemini API configuration</p>
+
+  <label for="apiKey">Gemini API Key</label>
+  <input type="password" id="apiKey" placeholder="Paste your Gemini API key" autocomplete="off" />
+
+  <button id="saveBtn">Save</button>
+  <div class="status" id="status"></div>
+
+  <div class="help">
+    Don't have a key yet? Get a free one at
+    <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener">
+      Google AI Studio
+    </a>.
+    Your key is stored locally in Chrome's synced storage and is never sent
+    anywhere except directly to Google's Gemini API.
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>
