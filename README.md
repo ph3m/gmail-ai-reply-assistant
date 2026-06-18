@@ -8,13 +8,7 @@ A Chrome extension (Manifest V3) that adds a one-click **AI Reply** button direc
 
 ## Demo
 
-> _Add a screenshot or short GIF here — e.g. `docs/demo.gif` showing the button appearing in a reply window and inserting generated text._
-
-```
-docs/
-  demo.gif
-  screenshot-button.png
-```
+![Demo of AI Reply button in Gmail](docs/screenshot.png)
 
 ## How it works
 
@@ -47,7 +41,7 @@ No backend server is required. The API call goes straight from the browser to Go
 
 1. **Clone the repo**
    ```bash
-   git clone https://github.com/<your-username>/gmail-ai-reply-assistant.git
+   git clone https://github.com/ph3m/gmail-ai-reply-assistant.git
    cd gmail-ai-reply-assistant
    ```
 
